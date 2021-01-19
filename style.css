@@ -24,6 +24,7 @@ h1 {
   height: 25vh;
   text-align: center;
 }
+
 .pigWrapper,
 .intro {
   display: flex;
@@ -47,7 +48,7 @@ h1 {
 .brickHouse {
   display: flex;
   justify-content: space-around;
-  margin: 18em 5em;
+  margin: 1.8em 5em;
 }
 
 .imgScale {
@@ -117,4 +118,14 @@ h1 {
   to {
     transform: translateX(145deg);
   }
+}
+
+.scene {
+  padding: 3%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.style1 {
+  background-color: #e1e100;
 }
