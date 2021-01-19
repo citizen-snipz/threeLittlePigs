@@ -24,30 +24,97 @@ h1 {
   height: 25vh;
   text-align: center;
 }
-.pigWrapper {
+.pigWrapper,
+.intro {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 4em 0;
 }
+
 /* have img classes that are named based on the kind of animation */
 
 .imgRotate {
   /* position: fixed; make sure it stays put so we can see it! */
   display: inline-block;
-  animation: rotate 1s linear infinite;
+  animation: rotate 0.2s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
-/* .pig1 {
-  position: fixed;
-  top: 20%;
-  left: 25%;
-} */
+.strawHut,
+.logCabin,
+.brickHouse {
+  display: flex;
+  justify-content: space-around;
+  margin: 18em 5em;
+}
 
+.imgScale {
+  display: inline-block;
+  animation: scale 0.2s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+.fa-ellipsis-v {
+  transform: rotate(55deg);
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  color: lightgray;
+}
+
+.wolfPlot {
+  height: 120vh;
+  position: relative;
+}
+
+.wolf {
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+
+  animation: tilt 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+.fa-tint {
+  position: absolute;
+  bottom: 28%;
+  left: 12%;
+  color: rgb(85, 169, 238);
+}
+
+.foodBowl {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  padding: 2.5em;
+  border: 7px dashed lightgray;
+  border-radius: 50%;
+}
+
+.wolfHut {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
 @keyframes rotate {
   to {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: scale(3);
+  }
+}
+
+@keyframes tilt {
+  to {
+    transform: translateX(145deg);
   }
 }
