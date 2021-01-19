@@ -32,6 +32,13 @@ h1 {
   margin: 4em 0;
 }
 
+.pig1,
+.pig2,
+.pig3,
+.motherPig {
+  width: 25%;
+  padding: 2.5em;
+}
 /* have img classes that are named based on the kind of animation */
 
 .imgRotate {
@@ -66,7 +73,7 @@ h1 {
 }
 
 .wolfPlot {
-  height: 120vh;
+  height: 130vh;
   position: relative;
 }
 
@@ -91,6 +98,7 @@ h1 {
   position: absolute;
   top: 5%;
   left: 30%;
+  width: 20%;
   padding: 2.5em;
   border: 7px dashed lightgray;
   border-radius: 50%;
@@ -116,5 +124,56 @@ h1 {
 @keyframes tilt {
   to {
     transform: translateX(145deg);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .fa-ellipsis-v {
+    transform: rotate(35deg);
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 10%;
+    color: lightgray;
+  }
+
+  .wolfPlot {
+    height: 120vh;
+    position: relative;
+  }
+
+  .wolf {
+    position: absolute;
+    bottom: 46%;
+    left: 5%;
+    width: 30%;
+    animation: tilt 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+
+  .fa-tint {
+    position: absolute;
+    bottom: 38%;
+    left: 12%;
+    width: 5%;
+    color: rgb(85, 169, 238);
+  }
+
+  .foodBowl {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 40%;
+    padding: 2.5em;
+    border: 7px dashed lightgray;
+    border-radius: 50%;
+  }
+
+  .wolfHut {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 50%;
   }
 }
