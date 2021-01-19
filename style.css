@@ -170,7 +170,8 @@ h1 {
     border-radius: 50%;
   }
 
-  .wolfHut {
+  .wolfHut,
+  .wolfCabin {
     position: absolute;
     right: 10%;
     top: 30%;
