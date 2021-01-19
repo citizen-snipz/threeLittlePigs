@@ -10,52 +10,71 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>The Three Little Pigs Scroll Animation</title>
   </head>
   <body>
-    <h1>The Three Little Pigs</h1>
+    <div data-aos="fade-down" data-aos-duration="2500" class="titlePage scene">
+      <h1>The Three Little Pigs</h1>
+    </div>
     <div class="story">
-      <h2>Once upon a time there were three little pigs.</h2>
-      <div class="pigWrapper">
-        <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
-        <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
-        <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
+      <div class="scene style1">
+        <h2 data-aos="fade-right" data-aos-duration="2500">Once upon a time there were three little pigs.</h2>
+        <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1500" class="pigWrapper">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
+          <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
+          <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
+        </div>
       </div>
-      <div class="intro">
-        <p>
-          As these little pigs came of age, they were confronted by Mother Pig,
-          who had just been on a tough-love self-help book kick. She squealed
-          sternly, "It's time you went out in the world and fended for
-          yourselves!"
-          <br />
+
+      <div class="scene intro">
+        <p data-aos="fade-right" data-aos-duration="1500">As these little pigs came of age, they were confronted by Mother Pig,
+          who had just been on a tough-love self-help book kick.
+        </p>
+        <img src="img/png/008-pig.png" alt="Pig#1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1500" class="imgRotate" />
+        <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2250">She squealed sternly, </span><span data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000">"It's time you went out in the world and fended for
+          yourselves!"<span>
+        </p>
+      </div>
+      <div class="scene style1">
+        <p data-aos="fade-left" data-aos-duration="1500">
           The pigs were startled and nervous to start their new life. But
           knowing better than to disappoint mother, the Three Little Pigs set
           course for their new lives.
         </p>
-        <img src="img/png/008-pig.png" alt="Pig#1" class="imgRotate" />
+        <div data-aos="fade-down" data-aos-duration="2500" data-aos-delay="1500" class="pigWrapper2">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
+          <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
+          <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
+        </div>
       </div>
-      <p>
-        The first little pig was very lazy. He didn't want to work at all and he
-        built his house out of straw. The second little pig worked a little bit
-        harder but he was somewhat lazy too and he built his house out of
-        sticks. Then, they sang and danced and played together the rest of the
-        day.
-      </p>
-      <div class="strawHut">
-        <img src="img/png/009-pig-1.png" alt="Pig#1" class="pig1" />
-        <img
-          src="img/png/003-hut.png"
-          alt="Straw Hut"
-          class="imgScale pig1 hut"
-        />
+      <div class="scene">
+        <p>
+          <span data-aos="fade-left" data-aos-duration="1000">The first little pig was very lazy. He didn't want to work at all and he
+          built his house out of straw. </span><span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">The second little pig worked a little bit
+          harder but he was somewhat lazy too and he built his house out of
+          sticks. </span><span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000">Then, they sang and danced and played together the rest of the
+          day.</span>
+        </p>
+        <div class="strawHut">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" data-aos="fade-in" data-aos-duration="750" class="pig1" />
+          <img
+            src="img/png/003-hut.png"
+            alt="Straw Hut"
+            data-aos="fade-in" data-aos-duration="750" data-aos-delay="750"
+            class="imgScale pig1 hut"
+          />
+        </div>
+        <div class="logCabin">
+          <img
+            src="img/png/004-cabin.png"
+            alt="Log Cabin"
+            data-aos="fade-in" data-aos-duration="750" data-aos-delay="2250"
+            class="imgScale pig2 cabin"
+          /><img src="img/png/010-pig-2.png" alt="Pig#2" data-aos="fade-in" data-aos-duration="750" data-aos-delay="1500" class="pig2" />
+        </div>
       </div>
-      <div class="logCabin">
-        <img
-          src="img/png/004-cabin.png"
-          alt="Log Cabin"
-          class="imgScale pig2 cabin"
-        /><img src="img/png/010-pig-2.png" alt="Pig#2" class="pig2" />
-      </div>
+
       <p>
         The third little pig worked hard all day and built his house with
         bricks. It was a sturdy house complete with a fine fireplace and
@@ -89,5 +108,9 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
