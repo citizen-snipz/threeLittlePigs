@@ -10,82 +10,341 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>The Three Little Pigs Scroll Animation</title>
   </head>
   <body>
-    <h1>The Three Little Pigs</h1>
+    <div data-aos="fade-down" data-aos-duration="2500" class="titlePage scene">
+      <h1>The Three Little Pigs</h1>
+    </div>
     <div class="story">
-      <h2>Once upon a time there were three little pigs.</h2>
-      <div class="pigWrapper">
-        <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
-        <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
-        <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
-      </div>
-      <div class="intro">
-        <p>
-          As these little pigs came of age, they were confronted by Mother Pig,
-          who had just been on a tough-love self-help book kick. She squealed
-          sternly, "It's time you went out in the world and fended for
-          yourselves!"
-          <br />
-          The pigs were startled and nervous to start their new life. But
-          knowing better than to disappoint mother, the Three Little Pigs set
-          course for their new lives.
-        </p>
-        <img src="img/png/008-pig.png" alt="Mother Pig" class="motherPig" />
-      </div>
-      <p>
-        The first little pig was very lazy. He didn't want to work at all and he
-        built his house out of straw. The second little pig worked a little bit
-        harder but he was somewhat lazy too and he built his house out of
-        sticks. Then, they sang and danced and played together the rest of the
-        day.
-      </p>
-      <div class="strawHut">
-        <img src="img/png/009-pig-1.png" alt="Pig#1" class="pig1" />
-        <img
-          src="img/png/003-hut.png"
-          alt="Straw Hut"
-          class="imgScale pig1 hut"
-        />
-      </div>
-      <div class="logCabin">
-        <img
-          src="img/png/004-cabin.png"
-          alt="Log Cabin"
-          class="imgScale pig2 cabin"
-        /><img src="img/png/010-pig-2.png" alt="Pig#2" class="pig2" />
-      </div>
-      <p>
-        The third little pig worked hard all day and built his house with
-        bricks. It was a sturdy house complete with a fine fireplace and
-        chimney. It looked like it could withstand the strongest winds.
-      </p>
-      <div class="brickHouse">
-        <img src="img/png/011-pig-3.png" alt="Pig#3" class="pig3" />
-        <img
-          src="img/png/001-wooden-house.png"
-          alt="Pig#3"
-          class="imgScale pig3 house"
-        />
+      <div class="scene style1">
+        <h2 data-aos="fade-right" data-aos-duration="2500">Once upon a time there were three little pigs.</h2>
+        <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1500" class="pigWrapper">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
+          <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
+          <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
+        </div>
       </div>
 
-      <p>
-        The next day, a wolf happened to pass by the lane where the three little
-        pigs lived; and he saw the straw house, and he smelled the pig inside.
-        He thought the pig would make a mighty fine meal and his mouth began to
-        water.
-      </p>
-      <div class="wolfPlot">
-        <img src="img/png/016-wolf.png" alt="Hungry wolf" class="wolf" />
-        <i class="fas fa-tint fa-2x imgScale"></i>
-        <i class="fas fa-ellipsis-v fa-5x"></i>
+      <div class="scene intro">
+        <p data-aos="fade-right" data-aos-duration="1500">As these little pigs came of age, they were confronted by Mother Pig,
+          who had just been on a tough-love self-help book kick.
+        </p>
+        <img src="img/png/008-pig.png" alt="Mama Pig" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1500"/>
+        <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2000">She squealed sternly, </span><span data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000">"It's time you went out in the world and fended for
+          yourselves!"<span>
+        </p>
+      </div>
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1500">
+          The pigs were startled and nervous to start their new life. But knowing better than to disappoint mother, the Three Little Pigs set course for their new lives.
+        </p>
+        <div data-aos="fade-down" data-aos-duration="2500" data-aos-delay="1500" class="pigWrapper2">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
+          <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
+          <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
+        </div>
+      </div>
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          The first little pig was very lazy. He didn't want to work at all and he built his house out of straw.
+        </p>
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+          The second little pig worked a little bit harder but he was somewhat lazy too and he built his house out of sticks.
+        </p>
+        <p data-aos="fade-in" data-aos-duration="3000" data-aos-delay="3000">
+          Then, they sang and danced and played together the rest of the day.
+        </p>
+        </p>
+        <div class="strawHut">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" data-aos="fade-in" data-aos-duration="750" class="pig1" />
+          <img
+            src="img/png/003-hut.png"
+            alt="Straw Hut"
+            data-aos="fade-in" data-aos-duration="750" data-aos-delay="750"
+            class="imgScale pig1 hut"
+          />
+        </div>
+        <div class="logCabin">
+          <img
+            src="img/png/004-cabin.png"
+            alt="Log Cabin"
+            data-aos="fade-in" data-aos-duration="750" data-aos-delay="2750"
+            class="imgScale pig2 cabin"
+          /><img src="img/png/010-pig-2.png" alt="Pig#2" data-aos="fade-in" data-aos-duration="750" data-aos-delay="2000" class="pig2" />
+        </div>
+      </div>
+
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          The third little pig worked hard all day and built his house with bricks. It was a sturdy house complete with a fine fireplace and chimney. It looked like it could withstand the strongest winds.
+        </p>
+        <div class="brickHouse">
+          <img src="img/png/011-pig-3.png" alt="Brick House" data-aos="fade-in" data-aos-duration="750" data-aos-delay="750" class="pig3" />
+          <img
+            src="img/png/001-wooden-house.png"
+            alt="Pig#3"
+            data-aos="fade-in" data-aos-duration="750" data-aos-delay="1500"
+            class="imgScale pig3 house"
+          />
+        </div>
+      </div>
+
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          The next day, a wolf happened to pass by the lane where the three little pigs lived; and he saw the straw house, and he smelled the pig inside. He thought the pig would make a mighty fine meal and his mouth began to water.
+        </p>
+        <div class="wolfPlot">
+          <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="750">
+            <img src="img/png/016-wolf.png" alt="Hungry wolf" class="wolf" />
+            <i class="fas fa-tint fa-2x imgScale"></i>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2500">
+            <i class="fas fa-ellipsis-v fa-5x"></i>
+            <img
+              src="img/png/038-food.png"
+              alt="Bowl of wolf kibble"
+              class="foodBowl"
+            />
+          </div>
+          <img src="img/png/003-hut.png" alt="Straw Hut" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" class="wolfHut" />
+        </div>
+      </div>
+
+
+    <div class="huffPuffStraw">
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">So he knocked on the door and said:</p>
+        <h2 data-aos="fade-in" data-aos-delay="1000">Little pig! Little pig! Let me in!</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+          But the little pig saw the wolf's big paws through the keyhole, so he answered back:
+        </p>
+        <h2 data-aos="fade-in" data-aos-delay="3000">No! No! No! Not by the hairs on my chinny chin chin!</h2>
+      </div>
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">Then the wolf showed his teeth and said:</p>
+        <h2>
+          <span data-aos="fade-in" data-aos-delay="1000">Then I'll huff </span><br />
+          <span data-aos="fade-in" data-aos-delay="2000">and I'll puff </span><br />
+          <span data-aos="fade-in" data-aos-delay="3000">and I'll blow your house down!</span>
+        </h2>
+      </div>
+      <div class="scene style1">
+        <div class="wolfBlowingStraw">
+          <img
+            src="img/png/020-wolf-howling.png"
+            alt="Wolf blowing"
+            data-aos="fade-in" data-aos-delay="750"
+            class="wolfBlowing"
+          />
+          <img
+            src="img/png/025-wind-4.png"
+            alt="Wolf blowing"
+            data-aos="fade-in" data-aos-delay="2250"
+            class="wolfBlowing"
+          />
+          <img
+            src="img/png/028-haystack.png"
+            alt="Straw Hut becomes Haystack"
+            data-aos="fade-in" data-aos-delay="3000"
+            class="wolfBlowing"
+          />
+        </div>
+        <p>
+          <span data-aos="fade-in">So he </span><span data-aos="fade-in" data-aos-delay="750" class="loud">huffed</span> <span data-aos="fade-right" data-aos-delay="1500">and he </span><span data-aos="fade-in" data-aos-delay="2250" class="loud">puffed </span><span data-aos="fade-in" data-aos-delay="3000" class="loud">and he blew the house down!</span>
+        </p>
+      </div>
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">
+         As the hut collapsed into a pile of hay, the wolf opened his jaws very wide and bit down as hard as he could, but the first little pig escaped and ran away to hide with the second little pig.
+        </p>
+        <img src="img/png/023-wind-2.png" data-aos="fade-right" data-aos-duration="1000" alt="Hay blowing in the wind" />
+        <img src="img/png/012-pork-1.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500" alt="Pig#1 running" />
+        <img src="img/png/004-cabin.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800" alt="Log Cabin" class="pig2 cabin" />
+      </div>
+    </div>
+
+    <div class="huffPuffSticks">
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          The wolf continued down the lane and he passed by the second house made of sticks; and he saw the house, and he smelled the pigs inside, and his mouth began to water as he thought about the fine dinner they would make.
+        </p>
+        <div class="wolfPlot">
+          <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="750">
+            <img src="img/png/016-wolf.png" alt="Hungry wolf" class="wolf" />
+            <i class="fas fa-tint fa-2x imgScale"></i>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2500">
+            <i class="fas fa-ellipsis-v fa-5x"></i>
+            <img
+              src="img/png/038-food.png"
+              alt="Bowl of wolf kibble"
+              class="foodBowl"
+            />
+          </div>
+          <img src="img/png/004-cabin.png" alt="Log Cabin" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" class="wolfCabin" />
+        </div>
+      </div>
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">So he knocked on the door and said:</p>
+        <h2 data-aos="fade-in" data-aos-delay="1000">Little pigs! Little pigs! Let me in!</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+          But the little pigs saw the wolf's pointy ears through the keyhole, so they answered back:
+        </p>
+        <h2 data-aos="fade-in" data-aos-delay="3000">No! No! No! Not by the hairs on our chinny chin chins!</h2>
+      </div>
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">Then the wolf showed his teeth and said:</p>
+        <h2>
+          <span data-aos="fade-in" data-aos-delay="1000">Then I'll huff </span><br />
+          <span data-aos="fade-in" data-aos-delay="2000">and I'll puff </span><br />
+          <span data-aos="fade-in" data-aos-delay="3000">and I'll blow your house down!</span>
+        </h2>
+      </div>
+      <div class="scene">
+        <div class="wolfBlowingSticks">
+          <img
+            src="img/png/020-wolf-howling.png"
+            alt="Wolf blowing"
+            data-aos="fade-in" data-aos-delay="750"
+            class="wolfBlowing"
+          />
+          <img
+            src="img/png/025-wind-4.png"
+            alt="Wolf blowing"
+            data-aos="fade-in" data-aos-delay="2250"
+            class="wolfBlowing"
+          />
+          <img
+            src="img/png/029-firewood.png"
+            alt="Log Cabin becomes Stick Pile"
+            data-aos="fade-in" data-aos-delay="3000"
+            class="wolfBlowing"
+          />
+        </div>
+        <p>
+
+          <span data-aos="fade-in">So he </span><span data-aos="fade-in" data-aos-delay="750" class="loud">huffed</span> <span data-aos="fade-right" data-aos-delay="1500">and he </span><span data-aos="fade-in" data-aos-delay="2250" class="loud">puffed </span><span data-aos="fade-in" data-aos-delay="3000" class="loud">and he blew the house down!</span>
+        </p>
+      </div>
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          As the cabin collapsed into a pile of sticks, the wolf was greedy and he tried to catch both pigs at once, but he was too greedy and got neither! His big jaws clamped down on nothing but air and the two little pigs scrambled away as fast as their little hooves would carry them.
+        </p>
+
+
         <img
-          src="img/png/038-food.png"
-          alt="Bowl of wolf kibble"
-          class="foodBowl"
+          src="img/png/001-wooden-house.png"
+          alt="Brick House"
+          data-aos="fade-in" data-aos-duration="1000"
+          class="pig3 house"
         />
-        <img src="img/png/003-hut.png" alt="Straw Hut" class="wolfHut" />
+        <img src="img/png/012-pork-1.png" alt="Wolf chasing two little pigs" />
+        <img
+          src="img/png/006-pork.png"
+          data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1500"
+          alt="Wolf chasing two little pigs"
+        />
+        <img
+          src="img/png/018-werewolf.png"
+          data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1800"
+          alt="Wolf chasing two little pigs"
+        />
+      </div>
+    </div>
+
+
+    <div class="huffPuffBricks">
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          The wolf chased them down the lane and he almost caught them. But they made it to the brick house and slammed the door closed before the wolf could catch them.
+        </p>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
+          The three little pigs they were very frightened, they knew the wolf wanted to eat them. And that was very, very true.
+        </p>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
+          The wolf hadn't eaten all day and he had worked up a large appetite chasing the pigs around and now he could smell all three of them inside and he knew that the three little pigs would make a lovely feast...
+        </p>
+      </div>
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">So he knocked on the door and said:</p>
+        <h2 data-aos="fade-in" data-aos-delay="1000">Little pigs! Little pigs! Let me in!</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+          But the little pigs saw the wolf's glowing eyes through the keyhole, so they answered back:
+        </p>
+        <h2 data-aos="fade-in" data-aos-delay="3000">No! No! No! Not by the hairs on our chinny chin chins!</h2>
+      </div>
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">Then the wolf showed his teeth and said:</p>
+        <h2>
+          <span data-aos="fade-in" data-aos-delay="1000">Then I'll huff </span><br />
+          <span data-aos="fade-in" data-aos-delay="2000">and I'll puff </span><br />
+          <span data-aos="fade-in" data-aos-delay="3000">and I'll blow your house down!</span>
+        </h2>
+      </div>
+      <div class="scene style1">
+        <div class="wolfBlowingSticks">
+          <img
+            src="img/png/020-wolf-howling.png"
+            alt="Wolf blowing"
+            data-aos="fade-in" data-aos-delay="750"
+            class="wolfBlowing"
+          />
+          <img
+            src="img/png/025-wind-4.png"
+            alt="Wolf blowing"
+            data-aos="fade-in" data-aos-delay="2250"
+            class="wolfBlowing"
+          />
+          <img
+            src="img/png/001-wooden-house.png"
+            alt="Brick House stands strong"
+            data-aos="fade-in" data-aos-delay="3000"
+            class="wolfBlowing"
+          />
+        </div>
+        <p>
+          <span data-aos="fade-right" data-aos-duration="750">Well! he huffed and he puffed. </span><span data-aos="fade-right" data-aos-duration="750" data-aos-delay="750">He puffed and he huffed. </span><span data-aos="fade-right" data-aos-duration="750" data-aos-delay="1500">And he huffed, huffed, and he puffed, puffed; but he could not blow the house down. </span>
+        </p>
+      </div>
+      <div class="scene">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          At last, he was so out of breath that he couldn't huff and he couldn't puff anymore. So he stopped to rest and thought a bit.
+        </p>
+        <img src="img/png/035-sleep.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1000" alt="Moon in sky" />
+        <img
+          src="img/png/037-dog-sleeping.png"
+          data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000"
+          alt="Exhausted wolf"
+        />
+      </div>
+      <div class="scene style1">
+        <p data-aos="fade-right" data-aos-duration="1000">
+          But this was too much. The wolf danced about with rage and swore he would come down the chimney and eat up the little pig for his supper.
+        </p>
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
+          <p>
+            But while he was climbing on to the roof the little pig made up a blazing fire and put on a big pot full of water to boil.
+          </p>
+          <img src="img/png/031-pot.png" alt="A hot cauldron" />
+        </div>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
+          Then, just as the wolf was coming down the chimney, the little piggy pulled off the lid, and plop! in fell the wolf into the scalding water.
+        </p>
+      </div>
+      <div class="scene">
+        <p>
+          <span data-aos="fade-right" data-aos-duration="1000">So the little piggy put on the cover again, </span><span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">boiled the wolf up, </span><span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">and the three little pigs ate him for supper.</span>
+        </p>
+        <div class="pigWrapper" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3000">
+          <img src="img/png/009-pig-1.png" alt="Pig#1" class="imgRotate pig1" />
+          <img src="img/png/010-pig-2.png" alt="Pig#2" class="imgRotate pig2" />
+          <img src="img/png/011-pig-3.png" alt="Pig#3" class="imgRotate pig3" />
+        </div>
+      </div>
+      <div class="scene style1">
+        <h2 data-aos="fade-up" data-aos-duration="2500">The End!</h2>
       </div>
       <div class="huffPuffStraw">
         <p>So he knocked on the door and said:</p>
@@ -272,6 +531,9 @@
         <h2>The End!</h2>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
