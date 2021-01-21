@@ -34,6 +34,7 @@ h1 {
   font-size: clamp(2.5rem, 1.5426rem + 4.2553vw, 5rem);
   color: pink;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
+  text-decoration: underline;
 }
 
 h2 {
@@ -55,10 +56,12 @@ p {
 .style1 {
   background-color: #e1e100;
   height: fit-content;
+  padding: 2em;
 }
 
 .pigWrapper,
-.intro {
+.intro,
+.droolWrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -87,7 +90,7 @@ p {
 .pig2,
 .pig3,
 .motherPig {
-  width: clamp(70px, 30vw, 210px);
+  width: clamp(70px, 30vw, 280px);
   padding: 2.5em;
 }
 
@@ -103,9 +106,16 @@ p {
 .brickHouse {
   display: flex;
   justify-content: space-around;
-  margin: 1.8em 5em;
-  width: clamp(100px, 30vw, 300px);
+  align-items: center;
+
   height: fit-content;
+}
+
+.strawHut img,
+.logCabin img,
+.brickHouse img {
+  margin: 1.8em 5em;
+  width: clamp(100px, 30vw, 350px);
 }
 
 .wolfBlowing,
@@ -214,11 +224,11 @@ p {
 
 .drop1,
 .drop2 {
-  margin-top: -3.5em;
+  margin-top: -4.2em;
 }
 
 .drop3 {
-  margin-top: -4.5em;
+  margin-top: -5.5em;
   margin-left: 2em;
 }
 
