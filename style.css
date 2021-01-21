@@ -171,11 +171,40 @@ p {
   filter: flipH;
 }
 
-.windSpin {
-  display: inline-block;
-  animation: spin 0.2s ease-in-out infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+[data-aos="spin"] {
+  transform: rotate(1080deg);
+  transition-property: transform;
+}
+
+[data-aos="spin"].aos-animate {
+  transform: rotate(0deg);
+}
+
+[data-aos="sleep"] {
+  transform: translateX(0deg);
+  transition-property: transform;
+}
+
+[data-aos="sleep"].aos-animate {
+  transform: rotate(45deg);
+}
+
+[data-aos="rock"] {
+  transform: translateX(-25deg);
+  transition-property: transform;
+}
+
+[data-aos="rock"].aos-animate {
+  transform: rotate(10deg);
+}
+
+[data-aos="grow"] {
+  transform: scaleY(0.5);
+  transition-property: transform;
+}
+
+[data-aos="grow"].aos-animate {
+  transform: scaleY(2.5);
 }
 
 .droolWrapper {
@@ -184,15 +213,19 @@ p {
 .drop1,
 .drop2,
 .drop3 {
-  margin-top: -4.2em;
   align-items: flex-start;
   width: 100%;
   height: fit-content;
   color: rgb(85, 169, 238);
 }
 
+.drop1,
+.drop2 {
+  margin-top: -3.5em;
+}
+
 .drop3 {
-  margin-top: -4.8em;
+  margin-top: -4.5em;
   margin-left: 2em;
 }
 
