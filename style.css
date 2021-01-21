@@ -44,7 +44,7 @@ footer a {
 h1 {
   text-align: center;
   font-size: clamp(2.5rem, 1.5426rem + 4.2553vw, 5rem);
-  color: pink;
+  color: #fc97a1;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
   text-decoration: underline;
 }
@@ -52,7 +52,7 @@ h1 {
 .directions {
   text-align: center;
   font-size: clamp(1.8rem, 1.417rem + 1.7021vw, 2.8rem);
-  color: pink;
+  color: #fc97a1;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
 }
 
@@ -88,8 +88,10 @@ p {
   padding: 4em 1.2em;
 }
 
-.intro {
-  background-image: url("https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFybXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+.intro,
+.firstPigs,
+.path,
+.pathImg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -97,13 +99,19 @@ p {
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+.intro {
+  background-image: url("https://i.ibb.co/3NV9b8N/barn-Scene.jpg");
+}
+
+.firstPigs {
+  background-image: url('https://i.ibb.co/yYN1TNW/pasture.jpg');
+}
+
+.path {
+  background-image: url('https://i.ibb.co/jgxxsvP/path.jpg');
+}
 .pathImg {
-  background-image: url("https://images.unsplash.com/photo-1518534249708-e8f3537753ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: white;
-  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
+  background-image: url("https://i.ibb.co/ZgLMPCc/woods.jpg");
 }
 
 .pig1,
@@ -323,19 +331,16 @@ p {
     transform: rotate(90deg);
   }
 }
-
 @keyframes scale {
   to {
     transform: scale(3);
   }
 }
-
 @keyframes tilt {
   to {
     transform: translateX(145deg);
   }
 }
-
 @keyframes spin {
   to {
     transform: rotate(1080deg);
@@ -347,7 +352,6 @@ p {
     height: 120vh;
     position: relative;
   }
-
   .wolf {
     position: absolute;
     bottom: 46%;
@@ -357,7 +361,6 @@ p {
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
   }
-
   .wolfDrool {
     position: absolute;
     bottom: 38%;
@@ -365,7 +368,6 @@ p {
     width: 5%;
     color: rgb(85, 169, 238);
   }
-
   .foodBowl {
     position: absolute;
     top: 5%;
@@ -375,7 +377,6 @@ p {
     border: 7px dashed lightgray;
     border-radius: 50%;
   }
-
   .wolfHut,
   .wolfCabin {
     position: absolute;
