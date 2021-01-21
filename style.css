@@ -44,7 +44,7 @@ footer a {
 h1 {
   text-align: center;
   font-size: clamp(2.5rem, 1.5426rem + 4.2553vw, 5rem);
-  color: #fc97a1;
+  color: #e46570;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
   text-decoration: underline;
 }
@@ -52,7 +52,7 @@ h1 {
 .directions {
   text-align: center;
   font-size: clamp(1.8rem, 1.417rem + 1.7021vw, 2.8rem);
-  color: #fc97a1;
+  color: #e46570;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
 }
 
@@ -68,7 +68,6 @@ p {
 
 .scene {
   padding: 3%;
-
   height: calc(var(--vh, 1vh) * 100);
   height: fit-content;
 }
@@ -77,6 +76,10 @@ p {
   background-color: #e1e100;
   height: fit-content;
   padding: 3.2em 2em;
+}
+
+.style2 {
+  background-color: #fafabd;
 }
 
 .pigWrapper,
