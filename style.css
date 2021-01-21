@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-:root * {
-  /* Pause the animation */
-  animation-play-state: paused;
-  /* Bind the animation to scroll */
-  animation-delay: calc(var(--scroll) * -1s);
-  /* These last 2 properites clean up overshoot weirdness */
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -44,7 +34,7 @@ footer a {
 h1 {
   text-align: center;
   font-size: clamp(2.5rem, 1.5426rem + 4.2553vw, 5rem);
-  color: #e46570;
+  color: pink;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
   text-decoration: underline;
 }
@@ -52,7 +42,7 @@ h1 {
 .directions {
   text-align: center;
   font-size: clamp(1.8rem, 1.417rem + 1.7021vw, 2.8rem);
-  color: #e46570;
+  color: pink;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
 }
 
@@ -78,10 +68,6 @@ p {
   padding: 3.2em 2em;
 }
 
-.style2 {
-  background-color: #fafabd;
-}
-
 .pigWrapper,
 .intro,
 .droolWrapper {
@@ -91,10 +77,8 @@ p {
   padding: 4em 1.2em;
 }
 
-.intro,
-.firstPigs,
-.path,
-.pathImg {
+.intro {
+  background-image: url("https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFybXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -102,19 +86,13 @@ p {
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.intro {
-  background-image: url("https://i.ibb.co/3NV9b8N/barn-Scene.jpg");
-}
-
-.firstPigs {
-  background-image: url('https://i.ibb.co/yYN1TNW/pasture.jpg');
-}
-
-.path {
-  background-image: url('https://i.ibb.co/jgxxsvP/path.jpg');
-}
 .pathImg {
-  background-image: url("https://i.ibb.co/ZgLMPCc/woods.jpg");
+  background-image: url("https://images.unsplash.com/photo-1518534249708-e8f3537753ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .pig1,
@@ -123,13 +101,6 @@ p {
 .motherPig {
   width: clamp(70px, 30vw, 280px);
   padding: 2.5em;
-}
-
-.imgRotate {
-  display: inline-block;
-  animation: rotate 0.2s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
 }
 
 .strawHut,
@@ -156,11 +127,10 @@ p {
   width: clamp(80px, 22vw, 300px);
 }
 
-.imgScale {
-  display: inline-block;
-  animation: scale 0.2s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+/* Wolf drooling outside of hut/cabin scene based on absolute positioning of different elements */
+.wolfPlot {
+  height: 100vh;
+  position: relative;
 }
 
 .fa-ellipsis-v {
@@ -170,11 +140,6 @@ p {
   top: 22%;
   left: 27%;
   color: lightgray;
-}
-
-.wolfPlot {
-  height: 100vh;
-  position: relative;
 }
 
 .wolf {
@@ -219,9 +184,9 @@ p {
   width: clamp(100px, 10vw, 150px);
 }
 
+/* flips directions of blowing wolf image */
 .rightFace {
   transform: scaleX(-1) rotate(-38deg);
-
   filter: flipH;
 }
 
@@ -242,6 +207,7 @@ p {
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+/* Pigs drooling in the end scene */
 .droolWrapper {
   display: flex;
 }
@@ -273,6 +239,8 @@ p {
   color: white;
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
+/* Custom AOS Scroll Animations */
 
 [data-aos="spin"] {
   transform: rotate(1080deg);
@@ -328,63 +296,3 @@ p {
   transform: scale(0.4);
   opacity: 0.3;
 }
-
-/* @keyframes rotate {
-  to {
-    transform: rotate(90deg);
-  }
-}
-@keyframes scale {
-  to {
-    transform: scale(3);
-  }
-}
-@keyframes tilt {
-  to {
-    transform: translateX(145deg);
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(1080deg);
-  }
-} */
-
-/* @media screen and (max-width: 770px) {
-  .wolfPlot {
-    height: 120vh;
-    position: relative;
-  }
-  .wolf {
-    position: absolute;
-    bottom: 46%;
-    left: 5%;
-    width: 30%;
-    animation: tilt 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-  }
-  .wolfDrool {
-    position: absolute;
-    bottom: 38%;
-    left: 12%;
-    width: 5%;
-    color: rgb(85, 169, 238);
-  }
-  .foodBowl {
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    width: 40%;
-    padding: 2.5em;
-    border: 7px dashed lightgray;
-    border-radius: 50%;
-  }
-  .wolfHut,
-  .wolfCabin {
-    position: absolute;
-    right: 10%;
-    top: 30%;
-    width: 50%;
-  }
-} */
