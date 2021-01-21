@@ -29,6 +29,18 @@ header {
   background-size: cover;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: skyblue;
+}
+
 h1 {
   text-align: center;
   font-size: clamp(2.5rem, 1.5426rem + 4.2553vw, 5rem);
@@ -213,6 +225,8 @@ p {
 
 .nightSky {
   background-image: url("https://images.unsplash.com/photo-1542752318-22530cb33d09?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6), 2px 1px 2px rgba(0, 0, 0, 0.6);
 }
