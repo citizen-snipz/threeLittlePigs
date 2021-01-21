@@ -8,3 +8,7 @@ window.addEventListener(
   },
   false
 );
+
+if (document.readyState == "complete") {
+  AOS.refresh();
+}

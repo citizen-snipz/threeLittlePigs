@@ -117,64 +117,86 @@ p {
 .fa-ellipsis-v {
   transform: rotate(55deg);
   position: absolute;
-  top: 30%;
-  left: 25%;
+  width: clamp(20px, 10vw, 50px);
+  top: 22%;
+  left: 27%;
   color: lightgray;
 }
 
 .wolfPlot {
-  height: 130vh;
+  height: 100vh;
   position: relative;
 }
 
-.wolf {
+.wolfPlot .wolf {
   position: absolute;
-  bottom: 35%;
-  left: 5%;
 
+  bottom: 38%;
+  left: 15%;
+  width: clamp(100px, 20vw, 300px);
   animation: tilt 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
-.fa-tint {
+.wolfDrool {
   position: absolute;
-  bottom: 28%;
-  left: 12%;
+  width: clamp(10px, 20vw, 30px);
+  bottom: 35%;
+  left: 22%;
   color: rgb(85, 169, 238);
 }
 
 .foodBowl {
   position: absolute;
   top: 5%;
-  left: 30%;
-  width: 20%;
+  left: 35%;
+  width: clamp(100px, 30vw, 250px);
   padding: 2.5em;
   border: 7px dashed lightgray;
   border-radius: 50%;
 }
 
-.wolfHut {
+.wolfHut,
+.wolfCabin {
   position: absolute;
+  width: clamp(200px, 30vw, 600px);
   right: 10%;
-  top: 30%;
+  bottom: 15%;
 }
 
 .rightFace {
-  transform: scaleX(-1);
+  transform: scaleX(-1) rotate(-38deg);
+
   filter: flipH;
 }
 
+.windSpin {
+  display: inline-block;
+  animation: spin 0.2s ease-in-out infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
 .droolWrapper {
-  background-color: black;
+  display: flex;
 }
 .drop1,
 .drop2,
 .drop3 {
+  margin-top: -4.2em;
+  align-items: flex-start;
   width: 100%;
   height: fit-content;
+  color: rgb(85, 169, 238);
 }
-@keyframes rotate {
+
+.drop3 {
+  margin-top: -4.8em;
+  margin-left: 2em;
+}
+
+/* @keyframes rotate {
   to {
     transform: rotate(90deg);
   }
@@ -192,7 +214,13 @@ p {
   }
 }
 
-@media screen and (max-width: 770px) {
+@keyframes spin {
+  to {
+    transform: rotate(1080deg);
+  }
+} */
+
+/* @media screen and (max-width: 770px) {
   .wolfPlot {
     height: 120vh;
     position: relative;
@@ -208,7 +236,7 @@ p {
     animation-delay: calc(var(--scroll) * -1s);
   }
 
-  .fa-tint {
+  .wolfDrool {
     position: absolute;
     bottom: 38%;
     left: 12%;
@@ -233,4 +261,4 @@ p {
     top: 30%;
     width: 50%;
   }
-}
+} */
