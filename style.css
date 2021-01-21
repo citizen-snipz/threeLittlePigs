@@ -22,19 +22,26 @@ body {
   font-family: "Yusei Magic", sans-serif;
 }
 
-.titlePage {
+header {
+  height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1601068680841-515df188a50b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBpZyUyMGZhcm18ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 h1 {
-  height: 100vh;
   text-align: center;
   font-size: clamp(2.5rem, 1.5426rem + 4.2553vw, 5rem);
   color: pink;
   text-shadow: 2px 1px 2px rgb(236, 161, 243);
   text-decoration: underline;
+}
+
+.directions {
+  text-align: center;
+  font-size: clamp(1.8rem, 1.417rem + 1.7021vw, 2.8rem);
+  color: pink;
+  text-shadow: 2px 1px 2px rgb(236, 161, 243);
 }
 
 h2 {
@@ -147,10 +154,10 @@ p {
   position: relative;
 }
 
-.wolfPlot .wolf {
+.wolf {
   position: absolute;
 
-  bottom: 38%;
+  bottom: 34%;
   left: 15%;
   width: clamp(100px, 20vw, 300px);
   animation: tilt 1s linear infinite;
@@ -161,7 +168,7 @@ p {
 .wolfDrool {
   position: absolute;
   width: clamp(10px, 20vw, 30px);
-  bottom: 35%;
+  bottom: 30%;
   left: 22%;
   color: rgb(85, 169, 238);
 }
@@ -225,11 +232,11 @@ p {
 
 .drop1,
 .drop2 {
-  margin-top: -4.2em;
+  margin-top: -5.2em;
 }
 
 .drop3 {
-  margin-top: -5.5em;
+  margin-top: -6.5em;
   margin-left: 2em;
 }
 
